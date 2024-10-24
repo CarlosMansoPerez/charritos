@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carnicería en Marbella: Carnicería Lorga Marbella, las mejores carnes para al mejor precio. Comprar carne en Marbella. Especialidad en barbacoas.">
+    <link rel="icon" type="image/jpg" href="./img/charritos-logo.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logoLorga.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Golosinas Charritos - Estepona</title>
+
+</head>
+<body id="body">
+    <!-- <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <div class="flex flex-col justify-center items-center">
+                <span class="text-red-700 text-2xl uppercase">Cupón de descuento</span>
+                <span class="text-center mt-4">Comenta el código en nuestro local para un 5% de descuento</span>
+                <span class="text-red-700 text-2xl uppercase mt-3">LORGAWEB5</span>
+            </div>
+        </div>
+    </div> -->
+
+    <header>
+        <nav class="bg-secondary border-gray-200 fixed w-full z-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-6">
+            <a href="#" class="flex items-center flex-col justify-center rtl:space-x-reverse">
+                <!-- <span class="text-center text-xl text-white font-bold">Golosinas</span>
+                <span class="text-center text-4xl text-white font-bold -mt-2">Charritos</span> -->
+                <img src="./img/charritos-logo.png" alt="Logo con casa de Carnicería Lorga" class="w-32">
+
+            </a>
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu" title="idioma español" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900  rounded-lg cursor-pointer hover:bg-gray-100">
+                <img src="./img/españa.svg" alt="" class="w-8">
+                </button>
+
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow" id="language-dropdown-menu">
+                <ul class="py-2 font-medium" role="none">
+                    <li>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                        <div class="inline-flex items-center">
+                            <img src="./img/reino_unido.svg" alt="" class="w-6">
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+                <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-language" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            </div>
+            <div class="bg-secondary items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-secondary">
+                <li>
+                <a href="./index.html#inicio" class="block py-2 px-3 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text" aria-current="page">Inicio</a>
+                </li>
+                <li>
+                <a href="./index.html#golosinas" class="block py-2 px-3 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text">Golosinas</a>
+                </li>
+                <li>
+                <a href="./index.html#eventos" class="block py-2 px-2 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text">Eventos</a>
+                </li>
+                <li>
+                <!-- <a href="./index.html#nosotros" class="block py-2 px-3 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text">Sobre Nosotros</a> -->
+                </li>
+                <li>
+                <a href="./index.html#ubicacion" class="block py-2 px-2 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text">Ubicación</a>
+                </li>
+                <li>
+                <a href="./index.html#contacto" class="block py-2 px-3 text-white rounded text-xl hover:bg-pink-500 hover:text-white transition font-text">Contacto</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+  
+    <main>
+
+        <div class="landing">
+
+            <video src="./img/video.mp4"  autoplay="true" muted="true" loop="true" autoplay muted playsinline></video>
+
+            <span class=" text-6xl md:text-7xl text-center mt-12 shadow-secondary">Golosinas</span>
+            <span class=" text-6xl md:text-9xl text-center mt-2 shadow-primary">Charritos</span>
+            <span class="font-text uppercase text-2xl md:text-xl mt-5">Estepona</span>
+
+            <div class="mt-20 flex flex-col md:flex-row justify-center items-center gap-5">
+                <a href="tel:+34951977533" class="btn-primary font-text text-xl min-w-[250px] text-center"><i class="bi bi-telephone-fill me-1"></i> 951 977 533</a>
+                <a href="https://maps.app.goo.gl/H7ukKziFGaM9Axjv5" class="btn-secondary font-text text-xl min-w-[250px] text-center"><i class="bi bi-geo-alt-fill"></i> Cómo llegar</a>
+            </div>
+
+        </div>
+
+        <div class="contenedor">
+
+            <section id="inicio" class="flex flex-col justify-center items-center py-10 md:pt-20">
+
+                <div class="flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-40">
+
+                    <div class="w-full md:w-[50%] flex justofy-start h-auto md:h-[700px]">
+                        <img src="https://img.freepik.com/free-photo/delicious-sweet-colorful-candies_23-2148777632.jpg?t=st=1729764059~exp=1729767659~hmac=bcbecc71c99f5e731c81ae6cb933c420218c48cb42eec9485d65358020775107&w=360" class="w-full md:w-full h-auto cover" alt="Chuletón de vaca">
+                    </div>
+        
+                    <div class="w-full md:w-[50%] flex flex-col justify-start items-start h-auto md:h-[700px]">
+                        <div class="w-full md:w-[75%]">
+                            <span class="uppercase font-text text-2xl text-primary">Charritos</span>
+                            <h1 class="text-4xl md:text-5xl font-text-bolder uppercase mt-4">Tienda de golosinas en Estepona</h1>
+                            <p class="mt-10 font-text text-xl">En Golosinas Charritos, nos enorgullece brindarte una experiencia única en golosinas. Desde nuestro inicio en 2010 en Estepona, hemos estado comprometidos con ofrecer las mejores chucherías, golosinas y productos relacionados para nuestros clientes.</p>
+                            <p class="font-text text-xl mt-5">Nos enorgullecemos de llevar la tradición de la calidad y la excelencia en golosinas desde 2010, cuando abrimos nuestras puertas para serviros con pasion y dedicación cada día, esforzandonos para haceros llegar a la mejor calidad posible.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+
+            <section id="golosinas" class="w-full flex flex-col justify-start items-start py-20">
+
+                <a href="#" aria-label="Ver más sobre comprar carne en Marbella" class="hover-primary transition uppercase"><h2 class="text-4xl font-text-bolder">Las mejores golosinas<span class="text-primary"> de Estepona</span></h2></a>
+                <p class="font-text mt-5 md:mt-3 text-xl max-w-[900px]">En Golosinas Charritos, ofrecemos una amplia variedad de golosinas que satisfarán hasta el paladar más exigente.</p>
+
+
+                <div class="w-full flex flex-col md:flex-row justify-start items-center gap-0 md:gap-5 mt-10">
+
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.vidalgolosinas.com/media/catalog/product/cache/797f44642619b5a3d8ef1510fd2422e6/m/e/melones-12-tarrinas-de-160g-chicles-online-2-24.jpg" alt="Chuleta de ternera" class="w-full md:w-52"></a>
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.marialunarillos.com/media/catalog/product/g/o/gominolas-de-az_car-sand_as-en-tajada-_1-kg_---fini.jpg" alt="Mostrador con muchos elaborados de carne" class="w-52 d-none"></a>
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.superchuches.com/11375/lengua-de-gato-chuche.jpg" alt="Hamburguesa de ternera" class="w-52 d-none"></a>
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.superchuches.com/11206-medium_default/botellitas-coca-cola.jpg" alt="Pollo al limón" class="w-52 d-none"></a>
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.marialunarillos.com/media/catalog/product/cache/babc9c3930426724bed95a50193e0e01/n/u/nubes-de-az_car-dianas-colores-arco_ris-_125_---fini0.jpg" alt="Bocaditos de alitas" class="w-52 d-none"></a>
+                    <a href="#" aria-label="Ver más sobre comprar carne en Marbella"><img src="https://www.vidalgolosinas.com/media/catalog/product/cache/797f44642619b5a3d8ef1510fd2422e6/f/r/fresas-silvestres-bolsa-1kg-2-24.jpg" alt="Pollo aliñado" class="w-52 d-none"></a>
+
+                </div>
+
+                <a href="#" aria-label="Ver más sobre comprar carne en Marbella" class="btn-secondary font-text text-lg text-white mt-10 m-auto">Todas las golosinas</a>
+
+            </section>
+
+        </div>
+
+        <section id="eventos" class="w-full h-[90vh] flex justify-center py-20">
+
+            <div class="w-[70%] flex flex-col justify-between items-between">
+                <div class="w-full text-center">
+                    <p class="uppercase font-text text-xl text-white">Dale un toque especial</p>
+                    <h2 class="text-white font-text-bolder uppercase text-4xl mt-3">Decoración para Eventos</h2>
+                </div>
+    
+                <div class="max-w-[500px] flex flex-col justify-start items-start mt-10 md:mt-0">
+                    <p class="font-text text-white text-xl">En Golosinas Charritos entendemos que un buen evento es un arte que combina el diseño de los productos con la decoración y estilo del lugar.</p>
+                    <p class="font-text text-white text-xl mt-5">Por eso, nos enorgullece mostrar una de nuestras especialidades, todo diseñado para llevar tus eventos siguiente nivel.</p>
+                </div>  
+            </div>
+
+        </section>
+
+        <div class="contenedor">
+
+            <!-- <section id="nosotros" class="w-full flex flex-col justify-center items-center py-5 md:py-20">
+
+                <div class="w-full flex flex-col justify-start items-between h-auto md:h-[700px]">
+
+                    <div class="flex flex-col justify-between items-center">
+                        <p class="uppercase font-text text-xl text-primary">Nuestro Equipo</p>
+                        <h2 class="font-text-bolder uppercase text-4xl mt-3">Sobre Nosotros</h2>
+                    </div>
+
+                    <div class="mt-10 flex flex-col justify-center items-center">
+                        <p class="max-w-[900px] text-start md:text-center font-text text-xl">Carnicería Lorga está orgullosa de contar con un equipo de profesionales dedicados y apasionados por su trabajo. Cada miembro de nuestro equipo aporta una experiencia única y un compromiso excepcional con la calidad y el servicio, lo que nos permite ofrecer a nuestros clientes productos de primera categoría junto a una atención única y personalizada.</p>
+                    </div>
+
+                    <div class="w-full flex flex-col md:flex-row justify-between items-center gap-10 md:gap-32 mt-20">
+
+                        <div class="w-[300px]">
+
+                            <div>
+                                <img src="./img/Esteban.jpeg" alt="" class="w-full md:w-[300px] h-auto md:h-[370px]">
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center mt-3">
+                                <p class="font-text-bolder text-4xl mt-2">Esteban</p>
+                                <p class="font-text text-2xl text-primary">Carnicero</p>
+                            </div>
+
+                        </div>
+
+                        <div class="w-[300px]">
+
+                            <div>
+                                <img src="./img/Monica.jpeg" alt="" class="w-full md:w-[300px] h-auto md:h-[370px]">
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center mt-3">
+                                <p class="font-text-bolder text-4xl mt-2">Mónica</p>
+                                <p class="font-text text-2xl text-primary">Carnicera y Charcutera</p>
+                            </div>
+
+                        </div>
+
+                        <div class="w-[300px]">
+
+                            <div>
+                                <img src="./img/Isa.webp" alt="" class="w-full md:w-[300px] h-auto md:h-[370px]">
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center mt-3">
+                                <p class="font-text-bolder text-4xl mt-2">Isabel</p>
+                                <p class="font-text text-2xl text-primary">Productos y Elaborados</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section> -->
+
+
+            <section id="ubicacion" class="mt-0 md: mt-10 py-10 md:py-20">
+
+                <div class="w-full flex flex-row justify-start items-start">
+                    
+                    <div class="flex flex-col md:flex-row justify-between items-start mt-0 md:mt-10">
+
+                        <div class="w-full md:w-[55%] flex flex-col justify-between items-start h-auto md:h-[350px]">
+
+                            <div>
+                                <p class="uppercase font-text text-xl text-primary">Ven a visitarnos</p>
+                                <h2 class="font-text-bolder uppercase text-4xl mt-3">Ubicación</h2>
+                            </div>
+
+                            <div>
+                                <p class="font-text text-xl mt-5">Nos encontramos en Calle Carmen Laforet 4, Estepona. Golosinas Charritos se ubica cerca del centro de Estepona, siendo la mejor tienda de golosinas de la zona.</p>
+                            </div>
+
+                            <a href="https://maps.app.goo.gl/H7ukKziFGaM9Axjv5" class="btn-primary text-white font-text text-xl mt-5 md:mt-0">Cómo llegar</a>
+                        </div>
+
+                        <div class="w-full md:w-[40%] mt-10 md:mt-0">
+                            <iframe title="Ubicación de Carnicería Lorga" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.4299639282176!2d-5.160353823915146!3d36.422984688871885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cd6ba0bea2b2b%3A0xb3b83a2fb11d8852!2sGolosinas%20Charritos!5e0!3m2!1sen!2ses!4v1729764820300!5m2!1sen!2ses" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+        
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <section id="contacto" class="mt-5 py-5 md:py-20">
+
+            <div class="w-full flex flex-col-reverse md:flex-row justify-start items-start">
+
+                <div class="w-full md:w-[60%] h-auto md:h-[600px] d-none">
+                    <img src="./img/Interior_Carniceria_Lorga.webp" alt="Interior de Carnicería Lorga" class="w-full h-auto md:h-[600px]">
+                </div>
+
+                <div class="w-full md:w-[30%] h-ato md:h-[600px] ps-10 py-5 flex flex-col justify-between items-start gap-10">
+                    <div>
+                        <p class="uppercase font-text text-xl text-primary max-w-[90%]">Tu Conexión con las Mejores Golosinas de Estepona</p>
+                        <h2 class="font-text-bolder uppercase text-4xl mt-3">Contacto</h2>
+                        <p class="font-text text-xl mt-10">En nuestra tienda en Estepona, nos encanta escuchar a nuestros clientes y estamos aquí para ayudarte con cualquier consulta, pedido o sugerencia.</p>
+                        <p class="font-text text-xl mt-5">No dudes en ponerte en contacto con nosotros a través de los siguientes medios.</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-5">   
+                        <a href="tel:+34951977533" class="btn-primary text-white font-text text-2xl"><i class="bi bi-telephone-fill me-1"></i> 951 97 75 33</a>
+                        <a href="https://www.instagram.com/golosinascharritos" target="_blank" class="btn-primary text-white font-text text-2xl"><i class="bi bi-instagram me-1"></i> @golosinascharritos</a>
+                        <a href="#" target="_blank" class="btn-primary text-white font-text text-2xl"><i class="bi bi-facebook me-1"></i> Golosinas Charritos</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        
+        <div class="w-full bg-primary">
+
+            <div class="max-w-[70%] m-auto flex flex-col md:flex-row justify-between items-start pt-10">
+
+                <div class="w-full md:w-[40%] flex flex-col md:flex-row justify-center items-start gap-5">
+                    <img src="./img/charritos-logo.png" alt="Logo con casa de Carnicería Lorga" class="w-60">
+                    <div class="flex flex-col justify-start items-between">
+                        <p class="font-text text-white text-2xl">Golosinas Charritos</p>
+                        <p class="font-text text-white text-md mt-4">Comprar golosinas en Estepona, especialidad en eventos y decoraciones en Estepona</p>
+                    </div>
+                </div>
+    
+                <div class="w-full md:w-[30%] flex flex-col justify-start items-start md:items-center mt-10 md:mt-0">
+                    <ul>
+                        <li><a class="text-white font-text text-xl" href="#inicio">Inicio</a></li>
+                        <li><a class="text-white font-text text-xl" href="#golosinas">Golosinas</a></li>
+                        <li><a class="text-white font-text text-xl" href="#eventos">Eventos</a></li>
+                        <!-- <li><a class="text-white font-text text-xl" href="#nosotros">Sobre Nosotros</a></li> -->
+                        <li><a class="text-white font-text text-xl" href="#ubicacion">Ubicación</a></li>
+                        <li><a class="text-white font-text text-xl" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex flex-col gap-5 mt-10 md:mt-0">   
+                    <a href="tel:+34951977533" class="btn-secondary text-primary font-text text-md"><i class="bi bi-telephone-fill me-1"></i> 951 97 75 33</a>
+                    <a href="https://www.instagram.com/golosinascharritos/" class="btn-secondary text-primary font-text text-sm"><i class="bi bi-instagram me-1"></i> @golosinascharritos</a>
+                    <a href="#" class="btn-secondary text-primary font-text text-sm"><i class="bi bi-facebook me-1"></i> Golosinas Charritos</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-primary w-full m-auto py-10">
+
+            <div class="max-w-[70%] m-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="flex flex-row gap-10">
+                    <a href="#" class="font-text text-white text-md">Política de Privacidad</a>
+                    <a href="#" class="font-text text-white text-md">Aviso Legal</a>
+                </div>
+    
+                <div>
+                    <p class="font-text text-white text-sm md:text-md mt-5 md:mt-0">Diseñado y construido por <a href="" class="font-text-bolder">Carlos Manso</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    
+
+</body>
+</html>
